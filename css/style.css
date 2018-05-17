@@ -1,0 +1,20 @@
+
+
+
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+}
+
+.col {
+    height: 100vh;
+    /* На время, не забыть убрать */
+}
+
+.col-r {
+    background-color: #f5f5f5;
+}
