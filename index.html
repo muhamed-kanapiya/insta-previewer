@@ -33,10 +33,10 @@
                 <div class="emulator">
                     <header class=" ">
                         <div class="">
-                            <div class="">
+                            <div class="profile-header">
                                 <ul>
                                     <li>
-                                        <picture-input class="avatar" width="80" height="80" :custom-strings="{
+                                        <picture-input class="avatar" width="73" height="73" :custom-strings="{
                           drag: 'Avatar'
                        }"></picture-input>
                                     </li>
@@ -45,29 +45,42 @@
                                     <li><span>106</span>following</li>
                                 </ul>
                                 <div class="buttons">
-                                <a class="follow ">Follow</a>
-                                <a class=""></a>
-                             </div>
+                                    <a class="follow ">Follow</a>
+                                    <a class="" style="font-size: 10px">&#9660;</a>
+                                </div>
                             </div>
+                            <div class="profile-info">
+                        <span class="name">{{ profileName }}</span>
+                        <br>
+                        <span class="desc">{{ profileDesc }}</span>
+                        <br>
+                        <span class="link"><a>{{ profileLink }}</a></span>
+
                         </div>
-                     <strong>{{ profileName }}</strong>
-                    <br> {{ profileDesc }}
-                    <br> {{ profileLink }}
-                    <br>
-                    <div class="photos">
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                        <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
-                    </div>
+                        </div>
+                        <div class="profile-buttons">
+                            <a class="">
+                                <div class="profile-grid"></div>
+                            </a>
+                            <a class=" ">
+                                <div class="profile-list"></div>
+                            </a>
+                            <a class=" ">
+                                <div class="profile-marks"></div>
+                            </a>
+                        </div>
+
+                        <div class="photos">
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                            <picture-input class="photo" :custom-strings="{drag: 'Photo'}"></picture-input>
+                        </div>
 
                 </div>
             </div>
