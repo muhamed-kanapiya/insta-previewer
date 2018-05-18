@@ -74,11 +74,13 @@ body {
     display: inline-block;
     width: 25%;
     text-align: center;
+    color: #9f9f9f;
 }
 
 .emulator ul li span {
     display: block;
     font-weight: 600;
+    color: #000;
 }
 
 .emulator ul {
