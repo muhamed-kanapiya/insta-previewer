@@ -2,9 +2,13 @@ body {
     margin: 0px;
 }
 
+@font-face {
+   font-family: "HKGrotesk-Bold";
+ src: url("/src/fonts/HKGrotesk-Bold") format("ttf")
+}
 .container {
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 5fr 7fr;
 }
 
 .col-r {
@@ -22,13 +26,15 @@ body {
 }
 .emulator{
    font-family: Segoe UI;
+   font-size: .85em;
 }
 
 .emulator .avatar .preview-container {
     border-radius: 100% !important;
-    height: 73px !important;
-    width: 73px !important;
+    height: 67px !important;
+    width: 67px !important;
     margin: inherit !important;
+    max-width: 67px;
 }
 
 .emulator .avatar .picture-inner {
@@ -43,38 +49,38 @@ body {
 }
 
 .emulator {
-   width: 312px;
+   width: 276px;
    background-color: #f5f5f5;
    position: relative;
    background-image: url(../src/img/back.png);
    background-repeat: no-repeat;
-   background-size: 143%;
-   background-position: -136px 10px;
-   padding: 113px 67px;
+   background-size: 112%;
+   background-position: -82px 9px;
+   padding: 98px 131px;
    margin: 0 auto;
 }
- 
+
 .buttons a {
-    display: block;
-    min-height: 26px;
-    min-width: 30px;
-    float: left;
-    margin-top: -25px;
-    background: #3797f0;
-    color: #fff;
-    text-align: center;
-    border-radius: 3px;
-    line-height: 24px;
-    font-family: Segoe UI Semibold;
+   display: block;
+   min-height: 25px;
+   min-width: 29px;
+   float: left;
+   margin-top: -21px;
+   background: #3797f0;
+   color: #fff;
+   text-align: center;
+   border-radius: 3px;
+   line-height: 25px;
+   font-family: Segoe UI Semibold;
 }
 
 .buttons {
-    margin-left: 90px;
+    margin-left: 77px;
 }
 
 .follow {
-    width: 81%;
-    margin-right: 5px;
+   width: 79%;
+   margin-right: 5px;
 }
 
 .emulator ul li {
@@ -139,7 +145,7 @@ body {
 
 .profile-info,
 .profile-header {
-    padding: 10px
+    padding: 10px 5px
 }
 
 .profile-info .name{
@@ -147,4 +153,8 @@ body {
 }
 .profile-info .link{
    color: #00509f;
+}
+
+.content .h1{
+   font-family: "HKGrotesk-Bold";
 }
