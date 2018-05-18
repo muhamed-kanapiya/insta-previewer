@@ -3,9 +3,15 @@ body {
 }
 
 @font-face {
-   font-family: "HKGrotesk-Bold";
- src: url("/src/fonts/HKGrotesk-Bold") format("ttf")
+    font-family: "HKGroteskBold";
+    src: url("../src/fonts/HKGrotesk-Bold.ttf") format("truetype")
 }
+
+@font-face {
+    font-family: "HKGrotesk";
+    src: url("../src/fonts/HKGrotesk-Regular.ttf") format("truetype")
+}
+
 .container {
     display: grid;
     grid-template-columns: 5fr 7fr;
@@ -14,7 +20,6 @@ body {
 .col-r {
     background-color: #f5f5f5;
     height: 100%;
-
 }
 
 .content {
@@ -24,9 +29,10 @@ body {
 .emulator .picture-input button {
     display: none;
 }
-.emulator{
-   font-family: Segoe UI;
-   font-size: .85em;
+
+.emulator {
+    font-family: Segoe UI;
+    font-size: .85em;
 }
 
 .emulator .avatar .preview-container {
@@ -49,29 +55,29 @@ body {
 }
 
 .emulator {
-   width: 276px;
-   background-color: #f5f5f5;
-   position: relative;
-   background-image: url(../src/img/back.png);
-   background-repeat: no-repeat;
-   background-size: 112%;
-   background-position: -82px 9px;
-   padding: 98px 131px;
-   margin: 0 auto;
+    width: 276px;
+    background-color: #f5f5f5;
+    position: relative;
+    background-image: url(../src/img/back.png);
+    background-repeat: no-repeat;
+    background-size: 112%;
+    background-position: -82px 9px;
+    padding: 98px 131px;
+    margin: 0 auto;
 }
 
 .buttons a {
-   display: block;
-   min-height: 25px;
-   min-width: 29px;
-   float: left;
-   margin-top: -21px;
-   background: #3797f0;
-   color: #fff;
-   text-align: center;
-   border-radius: 3px;
-   line-height: 25px;
-   font-family: Segoe UI Semibold;
+    display: block;
+    min-height: 25px;
+    min-width: 29px;
+    float: left;
+    margin-top: -21px;
+    background: #3797f0;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 25px;
+    font-family: Segoe UI Semibold;
 }
 
 .buttons {
@@ -79,8 +85,8 @@ body {
 }
 
 .follow {
-   width: 79%;
-   margin-right: 5px;
+    width: 79%;
+    margin-right: 5px;
 }
 
 .emulator ul li {
@@ -123,12 +129,15 @@ body {
 .profile-grid {
     background-position: 375px -18px;
 }
+
 .profile-list {
     background-position: 229px -18px;
 }
+
 .profile-marks {
     background-position: 85px -18px;
 }
+
 .profile-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -148,13 +157,36 @@ body {
     padding: 10px 5px
 }
 
-.profile-info .name{
-   font-weight: 600;
-}
-.profile-info .link{
-   color: #00509f;
+.profile-info .name {
+    font-weight: 600;
 }
 
-.content .h1{
-   font-family: "HKGrotesk-Bold";
+.profile-info .link {
+    color: #00509f;
+}
+
+.content h1 {
+    font-family: "HKGroteskBold";
+    font-size: 35px;
+}
+
+.content h2 {
+
+    font-family: "HKGrotesk";
+    font-size: 15px;
+    margin: 5px 0px;
+
+}
+.content input {
+   font-family: "HKGrotesk";
+   text-indent: 20px;
+   font-weight: 300;
+   font-size: 22px;
+   height: 39px;
+   width: 300px;
+   border-radius: 2px;
+   border: 1.5px solid #e8e8e8;
+}
+.big-emoji{
+   font-size: 50px;
 }
